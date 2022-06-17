@@ -1,0 +1,9 @@
+.idea
+.git
+.mvn
+.vscode
+docker
+node_modules
+target
+static/dist
+*.iml

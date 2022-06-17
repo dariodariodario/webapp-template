@@ -1,0 +1,24 @@
+{% import "macros.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% block css_header %}{% endblock %}
+    <link rel="stylesheet" href="/static/css/shared.css">
+</head>
+<script>
+    {% if DEV_MODE is defined %}
+    var DEV_MODE = true;
+    var DEV_DATA = {}
+    {% endif %}
+</script>
+
+<body>
+    <h1>Template outside</h1>
+            {% block content %}{% endblock %}
+
+</body>
+
+</html>

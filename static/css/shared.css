@@ -1,0 +1,8 @@
+/* Constants */
+
+:root {
+  --bold-bg-color: #ff6433;
+  --bold-text: #fff;
+  --light: rgb(204, 204, 204);
+  --light-darker: rgb(163, 163, 163);
+}

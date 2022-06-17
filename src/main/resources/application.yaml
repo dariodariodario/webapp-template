@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+
+  resources: # Static resources
+    static-locations: 'file:static/,file:public'
+    cache:
+      period: 0
+  mvc:
+    static-path-pattern: /static/**
+
+pebble:
+  cache: false # set to false for hot refresh
+  suffix:
+  prefix: ./templates/
+  strictVariables: true

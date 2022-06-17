@@ -1,0 +1,15 @@
+{% import "macros.html" %} {% extends "base.html" %} {% block css_header %}
+{%endblock %}
+{% block content %}
+<div>
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Error</h4>
+        <p>{{error_message}}</p>
+        {% if go_back_path is defined %}
+        <hr>
+        <p class="mb-0"><a href="{{go_back_path}}">Go back...</a> </p>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

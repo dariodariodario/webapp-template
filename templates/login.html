@@ -1,0 +1,21 @@
+{% import "macros.html" %}
+{% extends "base.html" %}
+
+{% block css_header %}
+
+{% endblock %}
+
+{% block content %}
+
+
+<div id="login">
+    <form method="POST" action="/login">
+        <p><input type="text" name="username"></p>
+        <p><input type="password" name="password"></p>
+        <p>
+            <button type="submit">Login</button>
+        </p>
+    </form>
+</div>
+
+{% endblock %}
