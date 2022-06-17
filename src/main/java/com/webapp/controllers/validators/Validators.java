@@ -13,8 +13,7 @@ public class Validators {
                 && !StringUtils.isEmpty(signupForm.getUsername())
                 && !StringUtils.isEmpty(signupForm.getEmail())
                 && !StringUtils.isEmpty(signupForm.getPassword())
-                && !StringUtils.isEmpty(signupForm.getPasswordConfirm())
-                && signupForm.isTc();
+                && !StringUtils.isEmpty(signupForm.getPasswordConfirm());
         var emailValid = EmailValidator.getInstance().isValid(signupForm.getEmail());
         var passwordMatch = signupForm.getPassword().equals(signupForm.getPasswordConfirm());
         return allPresent

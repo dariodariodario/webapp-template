@@ -9,7 +9,7 @@
 
 <h2>Registration</h2>
 <p>Please fill the following fields to register:</p>
-<form id="signup-form">
+<form id="signup-form" action="signup" method="post">
             <label for="Name" >Name</label>
             <input type="text" name="name" required  id="name">
             <label for="username" >Username</label>
@@ -20,14 +20,9 @@
             <input type="password" name="password" required  id="password" autocomplete="off"
                   value="">
             <label for="password-confirm" >Confirm password</label>
-            <input type="password" name="password-confirm" required  id="password-confirm"
+            <input type="password" name="passwordConfirm" required  id="password-confirm"
                   autocomplete="off" value="">
-            <input  type="checkbox" value="" name="tc" id="tc-check">
-            <label  for="tc-check">
-                  Check this box if you accept all <a href="/#">Terms and Conditions</a>
-            </label>
-            <button class="btn btn-primary signup-form-btn-submit"
-                  onclick="signup.default.submit(event)">Submit</button>
+            <button class="btn btn-primary signup-form-btn-submit">Submit</button>
             
       </div>
 

@@ -53,7 +53,7 @@ public class RegistrationController implements WithStdData {
 
     @RequestMapping(value = "", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<Map<String, Object>> signupSubmit(@RequestBody SignupForm signupForm) {
+    public ResponseEntity<Map<String, Object>> signupSubmit(SignupForm signupForm) {
         if (!Validators.isValidSignupForm(signupForm)) {
             return ResponseEntity.badRequest().body(Map.of(
                     "error", "form contains errors, please correct"
